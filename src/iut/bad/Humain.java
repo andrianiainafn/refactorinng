@@ -32,6 +32,16 @@ public class Humain {
         System.out.println(this.toString());
     }
     
+    // Méthode pour manger
+    public void manger() {
+        System.out.println(nom + " " + prenom + " est en train de manger.");
+    }
+    
+    // Méthode pour boire
+    public void boire() {
+        System.out.println(nom + " " + prenom + " est en train de boire.");
+    }
+    
     // Getters et setters
     public String getNom() {
         return nom;
