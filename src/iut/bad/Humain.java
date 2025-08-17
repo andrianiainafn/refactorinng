@@ -44,6 +44,11 @@ public class Humain implements Consommation {
         System.out.println(nom + " " + prenom + " est en train de boire.");
     }
     
+    // Méthode pour indiquer une amitié avec un autre humain
+    public void ami(Humain autreHumain) {
+        System.out.println(nom + " " + prenom + " est ami avec " + autreHumain.getNom() + " " + autreHumain.getPrenom());
+    }
+    
     // Getters et setters
     public String getNom() {
         return nom;
