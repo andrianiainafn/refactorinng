@@ -45,8 +45,13 @@ public class Humain implements Consommation {
     }
     
     // Méthode pour indiquer une amitié avec un autre humain
+    public void ami(Humain autreHumain, int dureeEnJours) {
+        System.out.println(nom + " " + prenom + " est ami avec " + autreHumain.getNom() + " " + autreHumain.getPrenom() + " depuis " + dureeEnJours + " jours");
+    }
+    
+    // Méthode surchargée avec valeur par défaut de 100 jours
     public void ami(Humain autreHumain) {
-        System.out.println(nom + " " + prenom + " est ami avec " + autreHumain.getNom() + " " + autreHumain.getPrenom());
+        ami(autreHumain, 100);
     }
     
     // Getters et setters
