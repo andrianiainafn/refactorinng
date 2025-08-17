@@ -21,6 +21,11 @@ public class Humain {
         this.age = age;
     }
     
+    // Méthode details() qui affiche nom, prénom et âge en un seul System.out.println
+    public void details() {
+        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age);
+    }
+    
     // Getters et setters
     public String getNom() {
         return nom;
