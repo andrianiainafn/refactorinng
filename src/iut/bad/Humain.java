@@ -1,4 +1,4 @@
-package iut;
+package iut.bad;
 
 public class Humain {
     // Classe parente pour Homme et Femme
