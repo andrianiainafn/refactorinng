@@ -21,9 +21,15 @@ public class Humain {
         this.age = age;
     }
     
-    // Méthode details() qui affiche nom, prénom et âge en un seul System.out.println
+    // Méthode toString() qui retourne une chaîne formatée
+    @Override
+    public String toString() {
+        return "Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age;
+    }
+    
+    // Méthode details() qui utilise toString() pour afficher les informations
     public void details() {
-        System.out.println("Nom: " + nom + ", Prénom: " + prenom + ", Âge: " + age);
+        System.out.println(this.toString());
     }
     
     // Getters et setters
