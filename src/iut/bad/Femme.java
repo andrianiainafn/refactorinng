@@ -1,8 +1,6 @@
 package iut.bad;
 
-import iut.Humain;
-
-public class Femme extends Humain {
+public class Femme {
     private String nom;
     private  String prenom;
     private int age;
@@ -38,11 +36,11 @@ public class Femme extends Humain {
         this.prenom = prenom;
     }
     
-    public int getAge() {
-        return age;
-    }
-    
     public void setAge(int age) {
         this.age = age;
+    }
+    
+    public int getAge() {
+        return age;
     }
 }

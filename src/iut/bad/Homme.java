@@ -1,8 +1,6 @@
 package iut.bad;
 
-import iut.Humain;
-
-public class Homme extends Humain {
+public class Homme {
     private String nom;
     private String prenom;
     private int age;
