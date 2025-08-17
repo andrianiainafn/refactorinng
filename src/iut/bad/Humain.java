@@ -1,6 +1,6 @@
 package iut.bad;
 
-public class Humain {
+public class Humain implements Consommation {
     // Classe parente pour Homme et Femme
     // Les attributs sont maintenant dans la classe parente
     protected String nom;
@@ -32,12 +32,14 @@ public class Humain {
         System.out.println(this.toString());
     }
     
-    // Méthode pour manger
+    // Implémentation de la méthode manger() de l'interface Consommation
+    @Override
     public void manger() {
         System.out.println(nom + " " + prenom + " est en train de manger.");
     }
     
-    // Méthode pour boire
+    // Implémentation de la méthode boire() de l'interface Consommation
+    @Override
     public void boire() {
         System.out.println(nom + " " + prenom + " est en train de boire.");
     }
